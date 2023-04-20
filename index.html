@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PasteJacking</title>
+</head>
+<body>
+<center>
+<p> Hello World. I am Tanzim Khan Rafi. I am testing pastejacing.If you try to copy anything from my Text I can change it with javascript. You can try this now!! Just copy any text/word from here and paste it anywhere. You will see that your copied text has been changed. Try it!! 
+<span style="position: absolute; left: -2000px; top: -100px;">
+, FAUUX !!  <br> 
+</span>
+!!
+</p>
+</center>
+
+<script type="text/javascript">
+document.addEventListener('copy', function(e){
+e.clipboardData.setData('text/plain', 'I changed your copied text with javascript 😈. ');
+e.preventDefault();
+});
+</script>
+
+</body>
